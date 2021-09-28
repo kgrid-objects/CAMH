@@ -9,7 +9,8 @@
     {
       "@id": "ark:CAMH/fk4805c32z/v1.0",
       "@type": "koio:KnowledgeObject",
-      "koio:title": "6 year Lung Cancer Risk Interpretation for Screening Decision-making"
+      "koio:title": "6 year Lung Cancer Risk Interpretation for Screening Decision-making",
+      "koio:hasImplementation":"ark:CAMH/fk4805c32z/interpretLungCancerRisk/v1.0"
     },
     {
       "@id": "ark:CAMH/fk4805c32z/interpretLungCancerRisk",
