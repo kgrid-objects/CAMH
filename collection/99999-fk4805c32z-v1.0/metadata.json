@@ -1,0 +1,19 @@
+{
+  "@id": "CAMH/fk4805c32z/v1.0",
+  "@type": "koio:KnowledgeObject",
+  "identifier": "ark:/CAMH/fk4805c32z/v1.0",
+  "version":"v1.0",
+  "title": "6 year Lung Cancer Risk Interpretation for Screening Decision-making",
+  "contributors": "KGRID TEAM",
+  "description": "This object interprets an individual's 6-year risk of having lung cancer and makes individualized recommendations regarding lung cancer screening.",
+  "citations": [
+    "http://www.nejm.org/doi/pdf/10.1056/NEJMoa1211776"
+  ],
+  "keywords": ["lung cancer"],
+  "hasServiceSpecification": "service.yaml",
+  "hasDeploymentSpecification": "deployment.yaml",
+  "hasPayload": "interpretLungCancerRisk.js",
+  "@context": [
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+  ]
+}
