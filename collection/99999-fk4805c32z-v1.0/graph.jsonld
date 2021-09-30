@@ -1,44 +1,45 @@
 {
   "@context": {
+    "ark":"https://arks.org/",
+    "dc": "http://purl.org/dc/elements/1.1/",
     "fno": "https://w3id.org/function/ontology#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "koio": "http://kgrid.org/koio#",
-    "dc": "http://purl.org/dc/elements/1.1/"
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@graph": [
     {
-      "@id": "ark:CAMH/fk4805c32z/v1.0",
+      "@id": "ark:/CAMH/fk4805c32z/v1.0",
       "@type": "koio:KnowledgeObject",
       "koio:title": "6 year Lung Cancer Risk Interpretation for Screening Decision-making",
-      "koio:hasImplementation":"ark:CAMH/fk4805c32z/interpretLungCancerRisk/v1.0"
+      "koio:hasImplementation":"ark:/CAMH/fk4805c32z/interpretLungCancerRisk/v1.0"
     },
     {
-      "@id": "ark:CAMH/fk4805c32z/interpretLungCancerRisk",
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk",
       "@type": "fno:Function",
       "fno:name": "interpretLungCancerRisk",
-      "fno:returns": "ark:CAMH/fk4805c32z/interpretLungCancerRisk/output"
+      "fno:returns": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/output"
     },
     {
-      "@id": "ark:CAMH/fk4805c32z/interpretLungCancerRisk/execution",
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/execution",
       "@type": "fno:Execution",
-      "fno:executes": "ark:CAMH/fk4805c32z/interpretLungCancerRisk"
+      "fno:executes": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk"
     },
     {
-      "@id": "ark:CAMH/fk4805c32z/interpretLungCancerRisk/output",
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/output",
       "@type": "fno:Output",
-      "fno:predicate": "ark:CAMH/fk4805c32z/interpretLungCancerRisk/result",
+      "fno:predicate": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/result",
       "fno:type": "xsd:decimal"
     },
     {
-      "@id": "ark:CAMH/fk4805c32z/interpretLungCancerRisk/v1.0",
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/v1.0",
       "@type": "fno:Implementation",
       "dc:version": "v1.0"
     },
     {
-      "@id": "ark:CAMH/fk4805c32z/interpretLungCancerRisk/mapping1",
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/mapping1",
       "@type": "fno:Mapping",
-      "fno:Function": "ark:CAMH/fk4805c32z/interpretLungCancerRisk",
-      "fno:Implementation": "ark:CAMH/fk4805c32z/interpretLungCancerRisk/v1.0"
+      "fno:Function": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk",
+      "fno:Implementation": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/v1.0"
     }
   ]
 }
