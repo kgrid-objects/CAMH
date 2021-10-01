@@ -1,0 +1,72 @@
+[
+    {"@context": {
+         "ark":"https://arks.org/",
+         "dc": "http://purl.org/dc/elements/1.1/",
+         "fno": "https://w3id.org/function/ontology#",
+         "koio": "http://kgrid.org/koio#",
+         "xsd": "http://www.w3.org/2001/XMLSchema#"
+       },
+      "@id": "ark:/CAMH/fk4805c32z/v1.0",
+      "@type": "koio:KnowledgeObject",
+      "koio:title": "6 year Lung Cancer Risk Interpretation for Screening Decision-making",
+      "koio:hasImplementation":"ark:/CAMH/fk4805c32z/interpretLungCancerRisk/v1.0"
+    },
+    {"@context": {
+         "ark":"https://arks.org/",
+         "dc": "http://purl.org/dc/elements/1.1/",
+         "fno": "https://w3id.org/function/ontology#",
+         "koio": "http://kgrid.org/koio#",
+         "xsd": "http://www.w3.org/2001/XMLSchema#"
+       },
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk",
+      "@type": "fno:Function",
+      "fno:name": "interpretLungCancerRisk",
+      "fno:returns": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/output"
+    },
+    {"@context": {
+         "ark":"https://arks.org/",
+         "dc": "http://purl.org/dc/elements/1.1/",
+         "fno": "https://w3id.org/function/ontology#",
+         "koio": "http://kgrid.org/koio#",
+         "xsd": "http://www.w3.org/2001/XMLSchema#"
+       },
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/execution",
+      "@type": "fno:Execution",
+      "fno:executes": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk"
+    },
+    {"@context": {
+         "ark":"https://arks.org/",
+         "dc": "http://purl.org/dc/elements/1.1/",
+         "fno": "https://w3id.org/function/ontology#",
+         "koio": "http://kgrid.org/koio#",
+         "xsd": "http://www.w3.org/2001/XMLSchema#"
+       },
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/output",
+      "@type": "fno:Output",
+      "fno:predicate": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/result",
+      "fno:type": "xsd:decimal"
+    },
+    {"@context": {
+         "ark":"https://arks.org/",
+         "dc": "http://purl.org/dc/elements/1.1/",
+         "fno": "https://w3id.org/function/ontology#",
+         "koio": "http://kgrid.org/koio#",
+         "xsd": "http://www.w3.org/2001/XMLSchema#"
+       },
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/v1.0",
+      "@type": "fno:Implementation",
+      "dc:version": "v1.0"
+    },
+    {"@context": {
+         "ark":"https://arks.org/",
+         "dc": "http://purl.org/dc/elements/1.1/",
+         "fno": "https://w3id.org/function/ontology#",
+         "koio": "http://kgrid.org/koio#",
+         "xsd": "http://www.w3.org/2001/XMLSchema#"
+       },
+      "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/mapping1",
+      "@type": "fno:Mapping",
+      "fno:Function": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk",
+      "fno:Implementation": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/v1.0"
+    }
+  ]
