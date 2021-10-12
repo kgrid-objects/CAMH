@@ -10,10 +10,15 @@
     "http://www.nejm.org/doi/pdf/10.1056/NEJMoa1211776"
   ],
   "keywords": ["lung cancer"],
-  "hasServiceSpecification": "service.yaml",
-  "hasDeploymentSpecification": "deployment.yaml",
-  "hasPayload": "interpretLungCancerRisk.js",
+  "koio:hasServiceSpecification": "service.yaml",
+  "koio:hasDeploymentSpecification": "deployment.yaml",
+  "koio:hasPayload": "interpretLungCancerRisk.js",
+  "koio:hasFunctionDescription": "graph.jsonld",
+  "fno:Function": {
+    "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk"
+  }
   "@context": [
-    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld",
+    "fno": "https://w3id.org/function/ontology#"
   ]
 }

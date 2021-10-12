@@ -1,20 +1,11 @@
 {
 	"@context": {
-		"ark": "https://arks.org/",
 		"dc": "http://purl.org/dc/elements/1.1/",
 		"fno": "https://w3id.org/function/ontology#",
 		"koio": "http://kgrid.org/koio#",
 		"xsd": "http://www.w3.org/2001/XMLSchema#"
 	},
 	"@graph": [
-		{
-			"@id": "ark:/CAMH/fk4805c32z/v1.0",
-			"@type": "koio:KnowledgeObject",
-			"koio:title": "6 year Lung Cancer Risk Interpretation for Screening Decision-making",
-			"koio:hasImplementation": {
-				"@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/v1.0"
-			}
-		},
 		{
 			"@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk",
 			"@type": "fno:Function",
