@@ -14,12 +14,13 @@
   "koio:hasDeploymentSpecification": "deployment.yaml",
   "koio:hasPayload": "interpretLungCancerRisk.js",
   "koio:hasFunctionDescription": "graph.jsonld",
-  "fno:Function": {
+  "ro:contains": {
     "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk"
   },
   "@context": {
     "koio": "http://kgrid.org/koio/contexts/knowledgeobject.jsonld",
     "fno": "https://w3id.org/function/ontology#",
-    "dc": "http://purl.org/dc/elements/1.1/"
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "ro": "http://purl.obolibrary.org/obo/ro.owl"
   }
 }

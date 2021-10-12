@@ -3,7 +3,8 @@
 		"dc": "http://purl.org/dc/elements/1.1/",
 		"fno": "https://w3id.org/function/ontology#",
 		"koio": "http://kgrid.org/koio#",
-		"xsd": "http://www.w3.org/2001/XMLSchema#"
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"ro":"http://purl.obolibrary.org/obo/ro.owl"
 	},
 	"@graph": [
 		{
