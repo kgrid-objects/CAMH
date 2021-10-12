@@ -16,9 +16,9 @@
   "koio:hasFunctionDescription": "graph.jsonld",
   "fno:Function": {
     "@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk"
-  }
-  "@context": [
-    "http://kgrid.org/koio/contexts/knowledgeobject.jsonld",
+  },
+  "@context": {
+    "koio": "http://kgrid.org/koio/contexts/knowledgeobject.jsonld",
     "fno": "https://w3id.org/function/ontology#"
-  ]
+  }
 }
