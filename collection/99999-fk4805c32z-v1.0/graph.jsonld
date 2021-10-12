@@ -13,6 +13,9 @@
 			"fno:name": "interpretLungCancerRisk",
 			"fno:returns": {
 				"@id": "ark:/CAMH/fk4805c32z/interpretLungCancerRisk/output"
+			  },
+			"ro:contained_in": {
+				"@id":"CAMH/fk4805c32z/v1.0"
 			}
 		},
 		{
