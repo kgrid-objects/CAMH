@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "fno": "https://w3id.org/function/ontology#"
+  },
+  "@graph": [
+    {
+      "@id": "1",
+      "@type": "fno:Execution",
+      "fno:executes":"helloworldjs/simple/v1.0/welcome",
+      "helloworldjs/simple/v1.0/welcome/result" : "Hello, James"
+    },
+    {
+      "@id": "2",
+      "@type": "fno:Execution",
+      "fno:executes":"helloworldjs/simple/v1.0/welcome",
+      "helloworldjs/simple/v1.0/welcome/result" : "Hello, Carla"
+    },
+    {
+      "@id": "3",
+      "@type": "fno:Execution",
+      "fno:executes":"helloworldjs/simple/v1.0/welcome",
+      "helloworldjs/simple/v1.0/welcome/result" : "Hello, Bob"
+    }
+  ]
+}
