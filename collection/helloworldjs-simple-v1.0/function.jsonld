@@ -6,12 +6,12 @@
     {
       "@id": "helloworldjs/simple/v1.0/welcome",
       "@type": "fno:Function",
-      "fno:returns":"helloworldjs/simple/v1.0/welcome/result"
+      "fno:returns":{"@id":"helloworldjs/simple/v1.0/welcome/output"}
     },
     {
       "@id": "helloworldjs/simple/v1.0/welcome/output",
       "@type": "fno:Output",
-      "fno:predicate":"result"
+      "fno:predicate":{"@id":"helloworldjs/simple/v1.0/welcome/greeting"}
     }
   ]
 }

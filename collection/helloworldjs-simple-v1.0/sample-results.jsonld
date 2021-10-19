@@ -4,22 +4,22 @@
   },
   "@graph": [
     {
-      "@id": "1",
+      "@id": "101",
       "@type": "fno:Execution",
-      "fno:executes":"helloworldjs/simple/v1.0/welcome",
-      "helloworldjs/simple/v1.0/welcome/result" : "Hello, James"
+      "fno:executes":{"@id":"helloworldjs/simple/v1.0/welcome"},
+      "helloworldjs/simple/v1.0/welcome/greeting" : "Hello, James"
     },
     {
       "@id": "2",
       "@type": "fno:Execution",
-      "fno:executes":"helloworldjs/simple/v1.0/welcome",
-      "helloworldjs/simple/v1.0/welcome/result" : "Hello, Carla"
+      "fno:executes":{"@id":"helloworldjs/simple/v1.0/welcome"},
+      "helloworldjs/simple/v1.0/welcome/greeting" : "Hello, Carla"
     },
     {
       "@id": "3",
       "@type": "fno:Execution",
-      "fno:executes":"helloworldjs/simple/v1.0/welcome",
-      "helloworldjs/simple/v1.0/welcome/result" : "Hello, Bob"
+      "fno:executes":{"@id":"helloworldjs/simple/v1.0/welcome"},
+      "helloworldjs/simple/v1.0/welcome/greeting" : "Hello, Bob"
     }
   ]
 }
