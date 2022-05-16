@@ -32,7 +32,6 @@ const PHQ9_Questionnaire = {
 
 //-----------------------------------------------------------//
 //Main Function call
-var i = { Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 1, 1], Send_Questionnaire: "no"};
 function process_request(i) {
     var o = {};
     var Score = PHQ9_Score_From_Array(i.Answers_Array);
@@ -46,7 +45,7 @@ function process_request(i) {
 }
 
 //console.log(process_request(i));
-module.exports = { process_request };
+//module.exports = { process_request };
 
 //-----------------------------------------------------------//
 //Functions 1

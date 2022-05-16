@@ -1,0 +1,5 @@
+/score:
+  post:
+    artifact: index.js
+    engine: javascript
+    function: process_request

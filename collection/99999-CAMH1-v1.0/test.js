@@ -1,7 +1,7 @@
 //test file
 
 //import * as process from 'F1_PHQ_questionnaire.js';
-var api = require('./F1_PHQ_questionnaire');
+var api = require('./index');
 
 /* --------------------------------------------------------------------------------------------------------------- */
 
@@ -36,10 +36,17 @@ var request = {Total_PHQ9_Score: -5, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 3],
 var response = api.process_request(request);
 console.log(response);
 
-// TEST 2.2 - If Total score is greater than 27
+console.log("TEST 2.2 - If Total score is greater than 27")
 var request = {Total_PHQ9_Score: 30, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 3], Send_Questionnare: "Yes"};
 var response = api.process_request(request);
-console.log(response);
+if (response.Score.PHQ9_total_from_array > 27) {
+    console.log("Passed")
+}
+else {
+    console.log("Failed: Expecting 27. Got: ", response.Score.PHQ9_total_from_array);
+    console.log(response);
+}
+
 
 /* -------------------------- */
 
@@ -71,6 +78,6 @@ console.log(response);
 
 // TEST 5 - testing for value(s) in send questionnaire is/are yes or no
 // TEST 5.1 - If value(s) is/are other than yes/no
-// var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 2], Send_Questionnaire: ""};
-// var response = api.process_request(request);
-// console.log(response);
+var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 2], Send_Questionnaire: ""};
+var response = api.process_request(request);
+console.log(response);
