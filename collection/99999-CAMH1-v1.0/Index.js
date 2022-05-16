@@ -1,6 +1,6 @@
 
 /* =================================================================================+
- * FILENAME : F1_PHQ_questionnaire.js 
+ * FILENAME : index.js 
  * AUTHOR   : Dr. Allen Flynn and Shreya Kapoor, April, 2022
  * 
  * Summary  : Program for CAMH hospital to take questionnaire input and do some
