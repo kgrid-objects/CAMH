@@ -21,7 +21,7 @@ function error_handling(response) {
 
 // TEST 0 - Sending a correct request
 console.log("\nTEST 0 - Sending a correct request");
-var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 3], Send_Questionnare: "YES"};
+var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 0, 3, 2, 1, 1, 2, 3], Send_Questionnare: "YES"};
 var response = api.process_request(request);
 error_handling(response);
 
@@ -79,14 +79,14 @@ error_handling(response);
 /* -------------------------- */
 
 // TEST 4 - testing for values in answer array are in range 0-3
-// TEST 4.1 - If value(s) is/are less than 0
-console.log("\nTEST 4.1 - If value(s) is/are less than 0");
+// TEST 4.1 - If value(s) in array is/are less than 0
+console.log("\nTEST 4.1 - If value(s) in array is/are less than 0");
 var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, -2, 3, 2, 1, 1, 2, 2], Send_Questionnare: "Yes"};
 var response = api.process_request(request);
 error_handling(response);
 
 // TEST 4.2 - If value(s) is/are greater than 9
-console.log("\nTEST 4.2 - If value(s) is/are greater than 9");
+console.log("\nTEST 4.2 - If value(s) in array is/are greater than 9");
 var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 10], Send_Questionnare: "Yes"};
 var response = api.process_request(request);
 error_handling(response);
@@ -95,7 +95,7 @@ error_handling(response);
 
 // TEST 5 - testing for value(s) in send questionnaire is/are yes or no
 // TEST 5.1 - If value(s) is/are other than yes/no
-console.log("\nTEST 5.1 - If value(s) is/are other than yes/no");
+console.log("\nTEST 5.1 - If value(s) in Send_Questionnaire is/are other than yes/no");
 var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 2], Send_Questionnaire: ""};
 var response = api.process_request(request);
 error_handling(response);

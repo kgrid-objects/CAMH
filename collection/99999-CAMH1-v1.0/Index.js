@@ -3,9 +3,7 @@
  * FILENAME : index.js 
  * AUTHOR   : Dr. Allen Flynn and Shreya Kapoor, April, 2022
  * 
- * Summary  : Paload file for CAMH hospital to take questionnaire input and do some
- * analysis and return interpretation and recommendations.
- * 
+ * Summary  : Paload file for CAMH to take questionnaire input and return interpretation and recommendations.
  * =================================================================================+ */
 
 const EXIT_SUCCESS = 0;
@@ -48,7 +46,7 @@ function sanitize_input_Total_PHQ9_Score(raw_request) {
     if (raw_request.Total_PHQ9_Score < MIN_PHQ9_SCORE ||
         raw_request.Total_PHQ9_Score > MAX_PHQ9_SCORE) {
                 
-        return {error_code: EXIT_FAILURE, error_msg: "PHQ9 total output.Total_PHQ9_Score not in accepted range! Please check again"};
+        return {error_code: EXIT_FAILURE, error_msg: "PHQ9 Total_PHQ9_Score not in accepted range! Please check again"};
         }
         
     // If input is correct, return EXIT_SUCCESS
@@ -176,13 +174,13 @@ function onlyNumbers(array) {
     });
 }
 
-function PHQ9_Score_From_Array(Answers_Array) {
+function PHQ9_Score_From_Array(answers) {
     var Score = {};
-    var count_input_in_array = Answers_Array.length;
-    if (count_input_in_array == 9 && onlyNumbers(Answers_Array)) {
+    var count_input_in_array = answers.length;
+    if (count_input_in_array == 9 && onlyNumbers(answers)) {
         Score = {
             Array_Length: 9,
-            PHQ9_total_from_array: sumarray(Answers_Array)
+            PHQ9_total_from_array: sumarray(answers)
         }
     }
     else {
@@ -210,7 +208,7 @@ function process_request(request) {
     else if (Score.PHQ9_total_from_array < request.Total_PHQ9_Score) {
         Score.PHQ9_total_from_array = request.Total_PHQ9_Score;
     }
-    main_output.Score = Score;
+    main_output.Score =  PHQ9_Score_From_Array(request.Answers_Array);
     main_output.Interpretation_And_Recommendations = PHQ9_Score_Advice(Score.PHQ9_total_from_array);
     main_output.PHQ9_Questionnaire = Attach_PHQ9(request.Send_Questionnare);
     return main_output
