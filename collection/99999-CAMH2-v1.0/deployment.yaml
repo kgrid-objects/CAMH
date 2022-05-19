@@ -1,0 +1,5 @@
+/interpretation:
+  post:
+    artifact: PHQ9_algorithm.js
+    engine: javascript
+    function: process_request

@@ -9,10 +9,10 @@ const EXIT_FAILURE = 1;
 function error_handling(response) {
     
     if (response.error_code == EXIT_FAILURE) {
-        console.log("Test failed");
+        console.log("Passed");
         console.log(response.error_msg);
     } else {
-        console.log("Expected output recieved");
+        console.log("Passed with appropriate request");
         console.log(response);
     }
 }
