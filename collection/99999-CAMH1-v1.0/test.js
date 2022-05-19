@@ -1,6 +1,6 @@
 //test file
 
-//import * as process from 'F1_PHQ_questionnaire.js';
+//import * as process from 'index.js';
 var api = require('./index');
 
 const EXIT_SUCCESS = 0;
@@ -80,13 +80,13 @@ error_handling(response);
 
 // TEST 4 - testing for values in answer array are in range 0-3
 // TEST 4.1 - If value(s) is/are less than 0
-console.log("\nTEST 2.2 - If Total score is greater than 27");
+console.log("\nTEST 4.1 - If value(s) is/are less than 0");
 var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, -2, 3, 2, 1, 1, 2, 2], Send_Questionnare: "Yes"};
 var response = api.process_request(request);
 error_handling(response);
 
 // TEST 4.2 - If value(s) is/are greater than 9
-console.log("\nTEST 2.2 - If Total score is greater than 27");
+console.log("\nTEST 4.2 - If value(s) is/are greater than 9");
 var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 10], Send_Questionnare: "Yes"};
 var response = api.process_request(request);
 error_handling(response);

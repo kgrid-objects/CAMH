@@ -176,13 +176,13 @@ function onlyNumbers(array) {
     });
 }
 
-function PHQ9_Score_From_Array(Answers) {
+function PHQ9_Score_From_Array(Answers_Array) {
     var Score = {};
-    var count_input_in_array = Answers.length;
-    if (count_input_in_array == 9 && onlyNumbers(Answers)) {
+    var count_input_in_array = Answers_Array.length;
+    if (count_input_in_array == 9 && onlyNumbers(Answers_Array)) {
         Score = {
             Array_Length: 9,
-            PHQ9_total_from_array: sumarray(Answers)
+            PHQ9_total_from_array: sumarray(Answers_Array)
         }
     }
     else {
