@@ -139,7 +139,7 @@ The output should look like this:
 ```
 ```
 
-You can change the input parameters values on the left side in the _example_ key to see the interpretations and recommendations for the provided PHQ9 Score
+You can change the input parameters values in the input box to see the interpretations and recommendations for different PHQ9 Scores.
 
 
 ## Common Issues/Problems
