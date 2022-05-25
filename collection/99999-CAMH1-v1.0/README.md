@@ -1,4 +1,4 @@
-#PHQ9 Score Interpreter
+# PHQ9 Score Interpreter
 
 This repository represents _PHQ9 Score Interpreter Knowledge Object(KO)_. 
 
@@ -76,7 +76,9 @@ Then download the latest release of the KGrid Activator from the release page (h
 
 directly into the score directory you just checked out and start up the Activator pointing to the current directory. For example, on a Mac (you'll need the Java SDK version 8 or higher running on your machine):
 
+```
 java -jar /Users/shreyakapoor/Documents/GitHub/CAMH/.kgrid/kgrid-activator-1.7.0.jar --spring.profiles.active=dev --kgrid.shelf.cdostore.url=filesystem:file:${PWD}
+```
 
 You can check that the Activator is running by going to http://localhost:8080 in a browser. You should see this description on your browser:
 ```
