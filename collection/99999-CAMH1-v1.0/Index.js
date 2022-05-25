@@ -39,7 +39,7 @@ function sanitize_input_Total_PHQ9_Score(raw_request) {
     if (typeof raw_request.Total_PHQ9_Score != "number" ||
         typeof raw_request == null) {
                 
-        return {error_code: EXIT_FAILURE, error_msg: "Wrong datatype provided! Please check again"};
+        return {error_code: EXIT_FAILURE, error_msg: "Number expected. Wrong datatype provided! Please check again"};
     }
         
     // Confirming the bounds of total output.Total_PHQ9_Score input
@@ -60,7 +60,7 @@ function sanitize_Answers_Array(raw_request) {
     if (typeof raw_request.Answers_Array != "object" ||
         typeof raw_request == null) {
                 
-        return {error_code: EXIT_FAILURE, error_msg: "Wrong datatype provided! Please check again"};
+        return {error_code: EXIT_FAILURE, error_msg: "Array expected. Wrong datatype provided! Please check again"};
     }
         
     // Confirming the answer array length is within bounds
@@ -83,21 +83,19 @@ function sanitize_Answers_Array(raw_request) {
     }
 
 //Sanitize send questionaire request input function
-function sanitize_Send_Questionnare(raw_request) {
+function sanitize_Send_Questionnaire(raw_request) {
         
     // Confirming the datatype of request fields are correct.
-    if (typeof raw_request.Send_Questionnare != "string" ||
-        typeof raw_request.Send_Questionnare == "" ||
-        typeof raw_request == null) {
+    if (typeof raw_request.Send_Questionnaire != "string") {
                 
-        return {error_code: EXIT_FAILURE, error_msg: "Wrong datatype provided! Please check again"};
+        return {error_code: EXIT_FAILURE, error_msg: "String expected. Wrong datatype provided! Please check again"};
         }
         
-    // Confirming the values Send_Questionnare input to be yes/no
-    else if (raw_request.Send_Questionnare.toUpperCase() != "YES" &&
-        raw_request.Send_Questionnare.toUpperCase() != "NO") {
+    // Confirming the values Send_Questionnaire input to be yes/no
+    else if (String(raw_request.Send_Questionnaire.toUpperCase()) != "YES" &&
+        String(raw_request.Send_Questionnaire.toUpperCase()) != "NO") {
                 
-        return {error_code: EXIT_FAILURE, error_msg: "Send_Questionnare value should be yes or no. Please check again"};
+        return {error_code: EXIT_FAILURE, error_msg: "Send_Questionnaire value should be yes or no. Please check again"};
         }
             
     // If input is correct, return EXIT_SUCCESS
@@ -200,17 +198,17 @@ function process_request(request) {
     var Score = PHQ9_Score_From_Array(request.Answers_Array);
     var Sanitized_Total_PHQ9_Score = sanitize_input_Total_PHQ9_Score(request);
     var Sanitized_Answers_Array = sanitize_Answers_Array(request);
-    var Sanitized_Send_Questionnare = sanitize_Send_Questionnare(request);
+    var Sanitized_Send_Questionnaire = sanitize_Send_Questionnaire(request);
 
     if (Sanitized_Total_PHQ9_Score.error_code == EXIT_FAILURE) return  Sanitized_Total_PHQ9_Score;
     else if (Sanitized_Answers_Array.error_code == EXIT_FAILURE) return Sanitized_Answers_Array;
-    else if (Sanitized_Send_Questionnare.error_code == EXIT_FAILURE) return Sanitized_Send_Questionnare;
+    else if (Sanitized_Send_Questionnaire.error_code == EXIT_FAILURE) return Sanitized_Send_Questionnaire;
     else if (Score.PHQ9_total_from_array < request.Total_PHQ9_Score) {
         Score.PHQ9_total_from_array = request.Total_PHQ9_Score;
     }
     main_output.Score =  PHQ9_Score_From_Array(request.Answers_Array);
     main_output.Interpretation_And_Recommendations = PHQ9_Score_Advice(Score.PHQ9_total_from_array);
-    main_output.PHQ9_Questionnaire = Attach_PHQ9(request.Send_Questionnare);
+    main_output.PHQ9_Questionnaire = Attach_PHQ9(request.Send_Questionnaire);
     return main_output
 }
 
