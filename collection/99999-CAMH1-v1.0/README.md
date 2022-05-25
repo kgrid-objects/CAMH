@@ -15,8 +15,8 @@ This repository represents _PHQ9 Score Interpreter Knowledge Object(KO)_.
 
 - How to get the PHQ9 Score Interpreter running in your local environment
     - Prerequisites: Testing and packaging
-    - Starting from the source code
-    - KGRID Activator Microserver Tool
+    - Understanding KGRID Activator Microserver Tool
+    - Starting from the CAMH source code
     - Use the browser to check the activator running on your device
     - Explore the KO in the Swagger editor
 
@@ -65,6 +65,8 @@ There are testing and packaging features in this project that require npm, npm i
 cd ./99999-CAMH1-v1.0/
 npm install
 ```
+### Understanding KGRID Activator Microserver Tool
+Kgrid activator provides remote invocation of the KO. The activator “activate” computable knowledge by (a) loading KOs stored as a digital files, (b) providing means to execute the computable knowledge held in those files, (c) making those means of execution available to external systems via web services, and (d) tracking the utilization of those web services[1].
 
 ### Starting from CAMH source code
 Check out the score object GitHub repo:
@@ -80,6 +82,7 @@ directly into the score directory you just checked out and start up the Activato
 java -jar /Users/shreyakapoor/Documents/GitHub/CAMH/.kgrid/kgrid-activator-1.7.0.jar --spring.profiles.active=dev --kgrid.shelf.cdostore.url=filesystem:file:${PWD}
 ```
 
+### Use the browser to check the activator running on your device
 You can check that the Activator is running by going to http://localhost:8080 in a browser. You should see this description on your browser:
 ```
 {
@@ -99,11 +102,14 @@ You can check that the Activator is running by going to http://localhost:8080 in
   } ]
 }
 ```
-### Explore the KO
+
+### Explore the KO in the Swagger editor
 To try out the KO in the Swagger Editor you need to point to the service description from the Swagger Editor at https://editor.swagger.io. The easiest way to is construct a Swagger Editor url pointing to the OpenAPI YAML file containing the service description:
 
 https://editor.swagger.io/?url=http://localhost:8080/99999/CAMH1/v1.0/service.yaml
 
 
-
+## Input and Output
+## Common Issues/Problems
+## References
 
