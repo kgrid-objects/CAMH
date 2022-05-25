@@ -110,6 +110,10 @@ https://editor.swagger.io/?url=http://localhost:8080/99999/CAMH1/v1.0/service.ya
 
 
 ## Input and Output
+
 ## Common Issues/Problems
+- Comment the module.exports = { process_request }; code from idex.js after running the test.js file.
+
 ## References
+[1] Flynn, AJ, Friedman, CP, Boisvert, P, Landis-Lewis, Z, Lagoze, C. The Knowledge Object Reference Ontology (KORO): A formalism to support management and sharing of computable biomedical knowledge for learning health systems. Learn Health Sys. 2018; 2:e10054. https://doi.org/10.1002/lrh2.10054
 
