@@ -41,7 +41,7 @@ Knowledge Object payload is defined as a document compromised of one more knowle
 #### Description of the payload files
 There are two payload files in written in JavaScript in the PHQ9 Score Interpreter KO named index.js file and test.js. 
 
-Index.js file contains JS code that takes input request for three parameters ​​that are Total_PHQ9_Score, Answers_Array, and Send_Questionnare. Total_PHQ9_Score represents the total PHQ9 questionnaire score. Answers_Array represents the score from individual nine answers to the PHQ9 questions. Send_Questionnare represents the request to send the qhole questionnaire.
+Index.js file contains JS code that takes input request for three parameters ​​that are Total_PHQ9_Score, Answers_Array, and Send_Questionnare. Total_PHQ9_Score represents the total PHQ9 questionnaire score. Answers_Array represents the score from individual nine answers to the PHQ9 questions. Send_Questionnare represents the request to send the PHQ9 questionnaire.
 
 The index.js file has multiple functions that does error checking of the input and provide interpretations and recommendations to the provided PHQ9 score input. Following is the source for the interpretations of the PHQ9 score https://www.hiv.uw.edu/page/mental-health-screening/phq-9.
 
