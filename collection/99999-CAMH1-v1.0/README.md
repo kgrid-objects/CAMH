@@ -59,12 +59,8 @@ The metadata file contains description of an array of knowledge object propertie
 ## How to get the PHQ9 Score Interpreter running in your local environment
 
 ### Prerequisites
-There are testing and packaging features in this project that require npm, npm is installed with Node.js npm. Once npm is installed
+There are testing and packaging features in this project that require code editor with Node.js.
 
-```
-cd ./99999-CAMH1-v1.0/
-npm install
-```
 ### Understanding KGRID Activator Microserver Tool
 Kgrid activator provides remote invocation of the KO. The activator “activate” computable knowledge by (a) loading KOs stored as a digital files, (b) providing means to execute the computable knowledge held in those files, (c) making those means of execution available to external systems via web services, and (d) tracking the utilization of those web services[1].
 
@@ -137,6 +133,18 @@ Sample input object for the PHQ9 Score Interpreter has three parameters.
 To get the output, click _Post_ button in green on the swagger editor. Then click _Try it out_ on the right side of the page followed by clicking execute.
 The output should look like this:
 ```
+{
+  "result": {
+    "Score": {
+      "Array_Length": 9,
+      "PHQ9_total_from_array": 12
+    },
+    "Interpretation_And_Recommendations": {
+      "Depression_Severity": "Severe",
+      "Proposed_Treatment_Actions": "Immediate initiation of pharmacotherapy and, if severe impairment or poor response to therapy, expedited referral to a mental health specialist for psychotherapy and/or collaborative management"
+    },
+    "PHQ9_Questionnaire": "Not requested"
+  }
 ```
 
 You can change the input parameters values in the input box to see the interpretations and recommendations for different PHQ9 Scores.
