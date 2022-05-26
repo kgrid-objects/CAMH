@@ -3,7 +3,8 @@
  * FILENAME : PHQ9_algorithm.js 
  * AUTHOR   : Dr. Allen Flynn and Shreya Kapoor, May, 2022
  * 
- * Summary  : Paload file for CAMH to take questionnaire input and return next algorithm stage with interpretation and recommendations.
+ * Summary  : Paload file that accepts a treatment algorithm stage, PHQ9 score, and report of
+    adverse events and returns a recommendation from the overall treatment algorithm
  * =================================================================================+ */
 
 
@@ -159,4 +160,4 @@ function process_request(request) {
     }
 }
 
-//module.exports = { process_request };
+module.exports = { process_request };

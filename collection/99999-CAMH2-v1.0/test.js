@@ -1,5 +1,5 @@
 /* ==================================================================
- * FILENAME : test_algorithm.js 
+ * FILENAME : test.js 
  * AUTHOR   : Shreya Kapoor & Dr. Flynn
  * 
  * Description: test file for PHQ9_algorithm.js
