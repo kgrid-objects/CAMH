@@ -59,10 +59,10 @@ The metadata file contains description of an array of knowledge object propertie
 ## How to get the PHQ9 Score Interpreter running in your local environment
 
 ### Prerequisites
-There are testing and packaging features in this project that require code editor with Node.js.
+There are testing and packaging features in this project that require code editor with [Node.js](https://nodejs.org/en/) and [Java11+JDK](https://www.oracle.com/java/technologies/downloads/). 
 
 ### Understanding KGRID Activator Microserver Tool
-Kgrid activator provides remote invocation of the KO. The activator “activate” computable knowledge by (a) loading KOs stored as a digital files, (b) providing means to execute the computable knowledge held in those files, (c) making those means of execution available to external systems via web services, and (d) tracking the utilization of those web services[1].
+Kgrid [activator](https://github.com/kgrid/kgrid-activator) provides remote invocation of the KO. The activator “activate” computable knowledge by (a) loading KOs stored as a digital files, (b) providing means to execute the computable knowledge held in those files, (c) making those means of execution available to external systems via web services, and (d) tracking the utilization of those web services[1].
 
 ### Starting from CAMH source code
 Check out the score object GitHub repo:
