@@ -72,9 +72,9 @@ git clone \https://github.com/kgrid-objects/CAMH.git
 cd collection
 
 Then download the latest release of the KGrid Activator from the release page (https://github.com/kgrid/kgrid-activator/releases).
-See the kgrid activator [documentation](http://kgrid.org/kgrid-activator/#activator-quick-start)for instructions on getting an activator running locally.
+See the kgrid activator [documentation](http://kgrid.org/kgrid-activator/#activator-quick-start) for instructions on getting an activator running locally.
 
-directly into the score directory you just checked out and start up the Activator pointing to the current directory. For example, on a Mac (you'll need the Java SDK version 8 or higher running on your machine):
+Directly into the score directory you just checked out and start up the Activator pointing to the current directory. For example, on a Mac (you'll need the Java SDK version 8 or higher running on your machine):
 
 ```
 java -jar kgrid-activator-1.7.0.jar --spring.profiles.active=dev --kgrid.shelf.cdostore.url=filesystem:file:${PWD}
