@@ -48,13 +48,13 @@ The index.js file has multiple functions that does error checking of the input a
 The test.js file contains multiple tests that are deployed to check the validity of error handling code in the index.js file.
 
 ### KO’s Deployment description
-The deployment description file contains the specificatopn of CBK model’s runtime requirements. The deployment description file in the KO is named deployment.yaml.
+The deployment description file contains the specificatopn of CBK model’s runtime requirements[1]. The deployment description file in the KO is named deployment.yaml.
 
 ### KO’s Service Description
-The service description file contains specification for an API for the CBK model. The  service description file in the KO is named service.yaml
+The service description file contains specification for an API for the CBK model[1]. The  service description file in the KO is named service.yaml
 
 ### KO’s Metadata
-The metadata file contains description of an array of knowledge object properties. The metadata filen the KO is named metadata.json.
+The metadata file contains description of an array of knowledge object properties like identifiers and simple descriptive elements. The structural metadata follows the Knowledge Object Information Ontology (KOIO) code artifact(s). The metadata filen the KO is named metadata.json.
 
 ## How to get the PHQ9 Score Interpreter running in your local environment
 
@@ -64,13 +64,15 @@ There are testing and packaging features in this project that require code edito
 ### Understanding KGRID Activator Microserver Tool
 Kgrid [activator](https://github.com/kgrid/kgrid-activator) provides remote invocation of the KO. The activator “activate” computable knowledge by (a) loading KOs stored as a digital files, (b) providing means to execute the computable knowledge held in those files, (c) making those means of execution available to external systems via web services, and (d) tracking the utilization of those web services[1].
 
+
 ### Starting from CAMH source code
 Check out the score object GitHub repo:
 
 git clone \https://github.com/kgrid-objects/CAMH.git
 cd collection
 
-Then download the latest release of the KGrid Activator from the release page (https://github.com/kgrid/kgrid-activator/releases)
+Then download the latest release of the KGrid Activator from the release page (https://github.com/kgrid/kgrid-activator/releases).
+See the kgrid activator [documentation](http://kgrid.org/kgrid-activator/#activator-quick-start)for instructions on getting an activator running locally.
 
 directly into the score directory you just checked out and start up the Activator pointing to the current directory. For example, on a Mac (you'll need the Java SDK version 8 or higher running on your machine):
 
