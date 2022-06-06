@@ -87,7 +87,14 @@ To test the payload in a Node environment, do the following:
 Note: If you skip the final step 6 the KO will NOT work properly when deployed using the KGrid Activator tool, a task that comes next!
 
 ### Understanding KGRID Activator Java Microservice
-Kgrid [activator](https://github.com/kgrid/kgrid-activator) provides remote invocation of the KO. The activator “activate” computable knowledge by (a) loading KOs stored as a digital files, (b) providing means to execute the computable knowledge held in those files, (c) making those means of execution available to external systems via web services, and (d) tracking the utilization of those web services[1].
+To make KOs useful, the Knowledge Grid team at the University of Michigan has developed a Java-based microservice tool for "activating" KOs called the
+KGrid Activator [activator](https://github.com/kgrid/kgrid-activator) 
+
+The KGrid Activator performs a neat trick. It makes turning on a RESTful webservice seamless and easy! The KGrid Activator unpacks the content in KOs, notably the payload, deployment description and service description files, and uses the contents of those three files to stand up a RESTful webservice and give webservice users an endpoint to call for engaging KO payloads! 
+
+When instantiated and running on any suitable computer or server with Java installed, the KGrid Activator acts as a RESTful webservice gateway that provides remote access to and invocation of the payload in any compliant KO. 
+
+We way the KGrid Activator “activates” the computable biomedical knowledge stored in a KO by (a) loading the KOs digital files into a running instance of the KGrid Activator, (b) providing a means to execute the code in the payload, (c) making those means of execution available to external systems as a RESTful webservice, and (d) tracking the utilization of the webservice endpoints enabled through activation [1].
 
 
 ### Starting from CAMH source code
