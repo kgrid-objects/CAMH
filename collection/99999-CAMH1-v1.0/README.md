@@ -90,17 +90,26 @@ Note: If you skip the final step 6 the KO will NOT work properly when deployed u
 To make KOs useful, the Knowledge Grid team at the University of Michigan has developed a Java-based microservice tool for "activating" KOs called the
 KGrid Activator ([KGrid Activator](https://github.com/kgrid/kgrid-activator/releases/tag/kgrid-activator-1.7.0)) 
 
-The KGrid Activator performs a neat trick. It makes turning on a RESTful webservice seamless and easy! The KGrid Activator unpacks the content in KOs, notably the payload, deployment description and service description files, and uses the contents of those three files to stand up a RESTful webservice and give webservice users an endpoint to call for engaging KO payloads! 
+The KGrid Activator performs a neat trick. It makes using compliant KOs to turn on RESTful webservices simple and easy to do! The KGrid Activator unpacks the content in KOs, notably the payload, deployment description and service description files, and uses the contents of those three files to stand up a RESTful webservice and give webservice users an endpoint to call for engaging KO payloads! 
 
 When instantiated and running on any suitable computer or server with Java installed, the KGrid Activator acts as a RESTful webservice gateway that provides remote access to and invocation of the payload in any compliant KO. 
 
 We way the KGrid Activator “activates” the computable biomedical knowledge stored in a KO by (a) loading the KOs digital files into a running instance of the KGrid Activator, (b) providing a means to execute the code in the payload, (c) making those means of execution available to external systems as a RESTful webservice, and (d) tracking the utilization of the webservice endpoints enabled through activation [1].
 
+To get started using it, download the latest release of the KGrid Activator at the link above.
 
-### Starting from CAMH source code
-Check out the score object GitHub repo:
+### Deploying the PHQ9 Score Interpreter KO to back its own webservice using the KGrid Activator
+Here are the steps to follow to deploy the KO in this repo locally and engage its payload (index.js) as a webservice.
 
-git clone \https://github.com/kgrid-objects/CAMH.git
+1. If you have not already done so, clone or download this CAMH repo
+
+```git clone \https://github.com/kgrid-objects/CAMH.git```
+
+2. 
+
+
+
+
 cd collection
 
 Then download the latest release of the KGrid Activator from the release page (https://github.com/kgrid/kgrid-activator/releases).
