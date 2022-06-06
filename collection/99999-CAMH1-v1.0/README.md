@@ -48,8 +48,11 @@ When executed, the index.js code validates the inputs. If problems with the inpu
 
 Although it is not required to have a working KO, it can be helpful to include an executable file with tests of the payload so that KO users can confirm the payload is working as designed. In this case a test.js file is included for this purpose. When executed in an appropriate JS environment (e.g., Node), the test.js file runs multiple tests against the index.js code to confirm that the code is functioning as intended. Output from running the test.js file indicates tests run and whether those tests passed or failed. 
 
-** Technical Note ** For the test.js file to run, there is one line of code in the index.js file that must be uncommented first. That line exports the overarching function in the index.js so it can be tested. The line is normally commented out when using the KO. Here is that line:
+** Technical Note ** For the test.js file to run in the Node JS environment, there is one line of code at the end of the index.js file that must be uncommented first. That line exports the overarching function in the index.js so it can be tested. The line is normally commented out when using the KO. Here is that line:
 
+//module.exports = { process_request };    
+
+Once the module.exports command is uncommented, then the test.js file will call on and test the payload in the index.js file!
 
 ### KO’s Deployment description
 The deployment description file contains the specificatopn of CBK model’s runtime requirements[1]. The deployment description file in the KO is named deployment.yaml.
