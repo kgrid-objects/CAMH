@@ -61,7 +61,9 @@ The deployment description file contains the specificatopn of CBK model’s runt
 The service description file contains specification for an API for the CBK model[1]. The  service description file in the KO is named service.yaml
 
 ### KO’s Metadata
-The metadata file contains description of an array of knowledge object properties like identifiers and simple descriptive elements. The structural metadata follows the Knowledge Object Information Ontology (KOIO) code artifact(s). The metadata filen the KO is named metadata.json.
+The metadata file contains description of an array of knowledge object properties like identifiers and simple descriptive elements. These metadata align with the Knowledge Object Implementation Ontology (KOIO), which is a formalism for describing the critical parts of any KO. These metadata are found in the file metadata.json.
+
+At this point, we have described the files comprising the KO with id = 99999-CAMH1-v1.0 titled . Next, we will cover some more technical information related to testing, deploying, and using this KO to back a simple RESTful webservice. 
 
 ## How to get the PHQ9 Score Interpreter running in your local environment
 
