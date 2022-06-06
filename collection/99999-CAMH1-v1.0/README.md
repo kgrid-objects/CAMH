@@ -69,10 +69,24 @@ At this point, we have described the files comprising the KO with id = 99999-CAM
 
 ### Prerequisites and Dependencies
 The following instructions assume that the user has installed Node.js and Java: 
+
 [Node.js](https://nodejs.org/en/)
+
 [Java11+JDK](https://www.oracle.com/java/technologies/downloads/). 
 
-### Understanding KGRID Activator Microserver Tool
+### Testing the Payload in a Node environment
+To test the payload in a Node environment, do the following:
+
+1. Download the KO (i.e., the repo with the folder CAMH/collection/99999-CAMH1-v1.0
+2. Uncomment the final line (//module.exports = { process_request };) in the index.js file so its over-arching function can be used by the test.js file
+3. Navigate to the folder with both the test.js and index.js files from the PHQ9 Score Interpreter KO
+4. Run this command  > node test.js
+5. Inspect the results of the tests and look for any failed tests. If all tests are passed then the index.js is working as intended.
+6. Recomment the final line (//module.exports = { process_request };) in the index.js file
+
+Note: If you skip the final step 6 the KO will NOT work properly when deployed using the KGrid Activator tool, a task that comes next!
+
+### Understanding KGRID Activator Java Microservice
 Kgrid [activator](https://github.com/kgrid/kgrid-activator) provides remote invocation of the KO. The activator “activate” computable knowledge by (a) loading KOs stored as a digital files, (b) providing means to execute the computable knowledge held in those files, (c) making those means of execution available to external systems via web services, and (d) tracking the utilization of those web services[1].
 
 
