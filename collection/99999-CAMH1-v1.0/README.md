@@ -1,6 +1,6 @@
 # PHQ9 Score Interpreter
 
-This repository represents _PHQ9 Score Interpreter Knowledge Object(KO)_. 
+This documentation is for the _PHQ9 Score Interpreter Knowledge Object(KO)_ kept in the 99999-CAMH1-v1.0 folder here on GitHub.  The 99999-CAMH1-v1.0 has all of the content needed for a compliant KGrid Knowledge Object (see below).
 
 ## Table of Contents
 
@@ -36,16 +36,18 @@ An example of a compliant KO is the "PHQ9 Score Interpreter Knowledge Object" wi
 
 ## PHQ9 Score Interpreter Knowledge Object and its Composition
 
-### KO’s CBK Model - Knowledge Payload
+### KO’s CBK Payload
 
-Knowledge Object payload is defined as a document compromised of one more knowledge content entities[1]. Following is a description of the payload files in the PHQ9 Score Interpreter KO.
+Inside this KO the CBK payload with a computer readable and executable representation of the validated Personal Health Questionnaire 9 (PHQ-9) depression screening tool and related scoring and interpretation information is found in the index.js file. This representation is in the JavaScript (JS) programming language, the same programming language that most web browsers now execute.  
+
+For this KO, the index.js file contains JS code that accepts three inputs or parameters ​​ (1) the total PHQ9 numeric score summing an individual's responses to the PHQ-9 questionnaire (Total_PHQ9_Score), (2) an array of the individual's answers to the PHQ-9 questionnaire which can be summed to compute the total PHQ-9 score (Answers_Array), and (3) a flag either to return or not return the PHQ-9 questionnaire itself in English (Send_Questionnare). 
+
+When executed, the index.js code validates the inputs. If problems with the inputs are found, then the computed result indicates what those problems are. If the inputs are as expected then the index.js code provides interpretations and recommendations tied to the Total PHQ9 score. The following is the source for these interpretations and recommendations based on the Total PHQ9 score https://www.hiv.uw.edu/page/mental-health-screening/phq-9.
 
 #### Description of the payload files
 There are two payload files in written in JavaScript in the PHQ9 Score Interpreter KO named index.js file and test.js. 
 
-Index.js file contains JS code that takes input request for three parameters ​​that are Total_PHQ9_Score, Answers_Array, and Send_Questionnare. Total_PHQ9_Score represents the total PHQ9 questionnaire score. Answers_Array represents the score from individual nine answers to the PHQ9 questions. Send_Questionnare represents the request to send the PHQ9 questionnaire.
 
-The index.js file has multiple functions that does error checking of the input and provide interpretations and recommendations to the provided PHQ9 score input. Following is the source for the interpretations of the PHQ9 score https://www.hiv.uw.edu/page/mental-health-screening/phq-9.
 
 The test.js file contains multiple tests that are deployed to check the validity of error handling code in the index.js file.
 
