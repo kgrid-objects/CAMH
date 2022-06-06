@@ -26,11 +26,13 @@ This repository represents _PHQ9 Score Interpreter Knowledge Object(KO)_.
 
 ## Introduction
 
-Knowledge Object(KO) is a digital package holding commutable biomedical knowledge[1]. The purpose of building KOs is to help make computable biomedical knowledge findable, accessible, interoperable, and reusable[1]. 
+A Knowledge Object (KO) is a digital package holding computable biomedical knowledge, which is knowledge formatted to be computer readable or executable[1]. The purpose KOs is to demonstrate the potential of a common packaging approach for making computable biomedical knowledge findable, accessible, interoperable, and reusable (F.A.I.R.)[1]. 
 
-KO in the K-grid community is defined as a document including or containing, at a minimum: some KO primary identifier, KO resource metadata fact sheet, KO service specification, KO lifecycle log, KO payload[1]. 
+For this project, KOs play a central role by packaging and thereby helping to organize several executable functions of interest related to depression screening and treatment.
 
-PHQ9 Score Interpreter Knowledge Object(KO) is defined as 99999-CAMH1-v1.0 in the collection repository on githib. Following is a description of PHQ9 Score Interpreter Knowledge Object.
+To be compliant with the current KO scheme from the Knowlede Grid team at the University of Michigan, a KO package must include and contain, at a minimum: a KO primary identifier in a metadata file, a KO service specification, a KO deployment description, and - most critically of all - a "payload", which is of course a file with computer readable or executable biomedical knoweldge[1]. 
+
+An example of a compliant KO is the "PHQ9 Score Interpreter Knowledge Object" with the unique identifier 99999-CAMH1-v1.0 in this repository. What follows next is a detailed description of PHQ9 Score Interpreter Knowledge Object.
 
 ## PHQ9 Score Interpreter Knowledge Object and its Composition
 
