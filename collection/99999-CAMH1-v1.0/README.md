@@ -44,12 +44,12 @@ For this KO, the index.js file contains JS code that accepts three inputs or par
 
 When executed, the index.js code validates the inputs. If problems with the inputs are found, then the computed result indicates what those problems are. If the inputs are as expected then the index.js code provides interpretations and recommendations tied to the Total PHQ9 score. The following is the source for these interpretations and recommendations based on the Total PHQ9 score https://www.hiv.uw.edu/page/mental-health-screening/phq-9.
 
-#### Description of the payload files
-There are two payload files in written in JavaScript in the PHQ9 Score Interpreter KO named index.js file and test.js. 
+### KO's Test File
 
+Although it is not required to have a working KO, it can be helpful to include an executable file with tests of the payload so that KO users can confirm the payload is working as designed. In this case a test.js file is included for this purpose. When executed in an appropriate JS environment (e.g., Node), the test.js file runs multiple tests against the index.js code to confirm that the code is functioning as intended. Output from running the test.js file indicates tests run and whether those tests passed or failed. 
 
+** Technical Note ** For the test.js file to run, there is one line of code in the index.js file that must be uncommented first. That line exports the overarching function in the index.js so it can be tested. The line is normally commented out when using the KO. Here is that line:
 
-The test.js file contains multiple tests that are deployed to check the validity of error handling code in the index.js file.
 
 ### KO’s Deployment description
 The deployment description file contains the specificatopn of CBK model’s runtime requirements[1]. The deployment description file in the KO is named deployment.yaml.
