@@ -88,7 +88,7 @@ Note: If you skip the final step 6 the KO will NOT work properly when deployed u
 
 ### Understanding KGRID Activator Java Microservice
 To make KOs useful, the Knowledge Grid team at the University of Michigan has developed a Java-based microservice tool for "activating" KOs called the
-KGrid Activator [activator](https://github.com/kgrid/kgrid-activator) 
+KGrid Activator ([KGrid Activator](https://github.com/kgrid/kgrid-activator/releases/tag/kgrid-activator-1.7.0)) 
 
 The KGrid Activator performs a neat trick. It makes turning on a RESTful webservice seamless and easy! The KGrid Activator unpacks the content in KOs, notably the payload, deployment description and service description files, and uses the contents of those three files to stand up a RESTful webservice and give webservice users an endpoint to call for engaging KO payloads! 
 
