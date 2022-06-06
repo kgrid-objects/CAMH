@@ -101,28 +101,24 @@ To get started using it, download the latest release of the KGrid Activator at t
 ### Deploying the PHQ9 Score Interpreter KO to back its own webservice using the KGrid Activator
 Here are the steps to follow to deploy the KO in this repo locally and engage its payload (index.js) as a webservice.
 
-1. If you have not already done so, clone or download this CAMH repo
+1. Be sure Java SDK 8 or higher is installed
+
+2. If you have not already done so, clone or download this CAMH repo. Here's the command for cloning the repo:
 
 ```git clone \https://github.com/kgrid-objects/CAMH.git```
 
-2. 
+2. If you have not already done so, download the latest release of the KGrid Activator its release page (https://github.com/kgrid/kgrid-activator/releases).
 
+3. Put the KGrid Activator's .jar file in the /collection folder holding your KOs (as in this repo)
 
-
-
-cd collection
-
-Then download the latest release of the KGrid Activator from the release page (https://github.com/kgrid/kgrid-activator/releases).
-See the kgrid activator [documentation](http://kgrid.org/kgrid-activator/#activator-quick-start) for instructions on getting an activator running locally.
-
-Directly into the score directory you just checked out and start up the Activator pointing to the current directory. For example, on a Mac (you'll need the Java SDK version 8 or higher running on your machine):
+4. To run the KGrid Activator and load the KOs in this repo, do this:
 
 ```
 java -jar kgrid-activator-1.7.0.jar --spring.profiles.active=dev --kgrid.shelf.cdostore.url=filesystem:file:${PWD}
 ```
 
 ### Use the browser to check the activator running on your device
-You can check that the Activator is running by going to http://localhost:8080 in a browser. You should see this description on your browser:
+You can check that the Activator is running locally by going to http://localhost:8080 in a browser. You should see this description on your browser:
 ```
 {
   "description" : "KGrid Activator API Starting Point!!",
