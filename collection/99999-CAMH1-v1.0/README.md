@@ -107,11 +107,11 @@ Here are the steps to follow to deploy the KO in this repo locally and engage it
 
 ```git clone \https://github.com/kgrid-objects/CAMH.git```
 
-2. If you have not already done so, download the latest release of the KGrid Activator its release page (https://github.com/kgrid/kgrid-activator/releases).
+3. If you have not already done so, download the latest release of the KGrid Activator its release page (https://github.com/kgrid/kgrid-activator/releases).
 
-3. Put the KGrid Activator's .jar file in the /collection folder holding your KOs (as in this repo)
+4. Put the KGrid Activator's .jar file in the /collection folder holding your KOs (as in this repo)
 
-4. To run the KGrid Activator and load the KOs in this repo, do this:
+5. To run the KGrid Activator and load the KOs in this repo, do this:
 
 ```
 java -jar kgrid-activator-1.7.0.jar --spring.profiles.active=dev --kgrid.shelf.cdostore.url=filesystem:file:${PWD}
