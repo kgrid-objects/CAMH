@@ -4,7 +4,7 @@ Developed as part of the CAMH knowledge graph project
 
 ## Overview
 
-A KO can be thought of as a collection of functions. Each function has inputs and outputs. Each function also has one or more implementations. Clients execute a function by sending inputs/parameters and receiving outputs/results
+A KO is a digital package containing one of more computable readable files and/or executable functions along with other information. Here we will focus on KOs containing individual pure functions. Each pure function has inputs (a.k.a. parameters) and outputs (a.k.a. computed results). Each pure function also has one or more concrete implementations. Clients execute a function by sending inputs/parameters and receiving outputs/computed results.
 
 Initially, the KGrid used only functions with implementations intended to be exposed as a RESTful API. Each function was described by an OpenAPI doc (we called them endpoints) and mapped to an implementation in YAML for deployment in a particulat runtime environment (via deployment.yaml).
 
