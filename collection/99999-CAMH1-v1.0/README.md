@@ -63,12 +63,14 @@ The service description file contains specification for an API for the CBK model
 ### KO’s Metadata
 The metadata file contains description of an array of knowledge object properties like identifiers and simple descriptive elements. These metadata align with the Knowledge Object Implementation Ontology (KOIO), which is a formalism for describing the critical parts of any KO. These metadata are found in the file metadata.json.
 
-At this point, we have described the files comprising the KO with id = 99999-CAMH1-v1.0 titled . Next, we will cover some more technical information related to testing, deploying, and using this KO to back a simple RESTful webservice. 
+At this point, we have described the files comprising the KO with id = 99999-CAMH1-v1.0 titled "PHQ9 Score Interpreter". Next, we will cover some more technical information related to testing, deploying, and using this KO to back a simple RESTful webservice. 
 
-## How to get the PHQ9 Score Interpreter running in your local environment
+## How to get the PHQ9 Score Interpreter KO running in your local environment
 
-### Prerequisites
-There are testing and packaging features in this project that require code editor with [Node.js](https://nodejs.org/en/) and [Java11+JDK](https://www.oracle.com/java/technologies/downloads/). 
+### Prerequisites and Dependencies
+The following instructions assume that the user has installed Node.js and Java: 
+[Node.js](https://nodejs.org/en/)
+[Java11+JDK](https://www.oracle.com/java/technologies/downloads/). 
 
 ### Understanding KGRID Activator Microserver Tool
 Kgrid [activator](https://github.com/kgrid/kgrid-activator) provides remote invocation of the KO. The activator “activate” computable knowledge by (a) loading KOs stored as a digital files, (b) providing means to execute the computable knowledge held in those files, (c) making those means of execution available to external systems via web services, and (d) tracking the utilization of those web services[1].
