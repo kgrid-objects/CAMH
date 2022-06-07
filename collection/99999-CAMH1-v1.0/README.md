@@ -109,7 +109,7 @@ Here are the steps to follow to deploy the KO in this repo locally and engage it
 
 3. If you have not already done so, download the latest release of the KGrid Activator its release page (https://github.com/kgrid/kgrid-activator/releases).
 
-4. Put the KGrid Activator's .jar file in the /collection folder holding your KOs (as in this repo)
+4. In your file system, move the KGrid Activator's .jar file to the same level as the /collection folder holding this repos KOs
 
 5. To run the KGrid Activator and load the KOs in this repo, do this:
 
