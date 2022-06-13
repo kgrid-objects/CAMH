@@ -1,5 +1,0 @@
-/interpretLungCancerRisk:
-  post:
-    engine: javascript
-    artifact: interpretLungCancerRisk.js
-    function: interpretLungCancerRisk

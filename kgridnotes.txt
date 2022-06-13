@@ -1,2 +1,0 @@
-To start Kgrid activator
-java -jar /Users/shreyakapoor/Documents/GitHub/CAMH/.kgrid/kgrid-activator-1.7.0.jar --spring.profiles.active=dev --kgrid.shelf.cdostore.url=filesystem:file:///Users/shreyakapoor/Documents/GitHub/CAMH/collection/
