@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "koio": "http://kgrid.org/koio/",
+    "fno" : "https://w3id.org/function/ontology/"
+  },
+  "@id":"https://github.com/kgrid-objects/CAMH/tree/CAMH.PHQ9SCOREINTERPRETER.V1.0/99999-PHQ9ScoreInterpreter-v1.0",
+  "@type": "koio:KnowledgeObject",
+  "dcterms:title" : "PHQ9 Score Interpreter",
+  "dcterms:hasVersion" :"1.0",
+  "dcterms:created":"2022-06-13",
+  "dcterms:description" : "PHQ9 Score Interpreter Knowledge Object for computing interpretations and corresponding recommendations for the full range of PHQ9 scores",
+  "dcterms:creator" : ["https://www.camh.ca/","https://medicine.umich.edu/dept/learning-health-sciences"],
+  "dcterms:source" : ["https://www.hiv.uw.edu/page/mental-health-screening/phq-9"],
+  "dcterms:publisher" : "https://www.camh.ca/",
+  "dcterms:rights" : "All rights reserved.",
+  "dcterms:rightsHolder" : "Centre for Addiction and Mental Health. 1451 Queen Street West Toronto ON Canada - M6R 1A1",
+  "dcterms:license":"NOT licensed for use outside the Centre for Addiction and Mental Health",
+  "dcterms:valid" : "2022-06-13/",
+  "dcterms:hasPart":["index.js","test.js","README.md","deployment.yaml","service.yaml","metadata.jsonld"],
+  "koio:hasPayload" : {
+  "@id":"https://github.com/kgrid-objects/CAMH/blob/CAMH.PHQ9SCOREINTERPRETER.V1.0/99999-PHQ9ScoreInterpreter-v1.0/index.js",
+  "@type" : "fno:function",
+  "dcterms:title" : "process_request",
+  "dcterms:language" : "Javascript",
+  "fno:solves" : "Maps interpretations and recommendations to full range of Personal Health Questionnaire 9 (PHQ9) scores",
+  "fno:expects" : ["PHQ9_Total_Score", "PHQ9_Questionnaire_Answers", "PHQ9_Questionnaire_Flag"],
+  "fno:returns" :["Interpretation_and_Recommendation","PHQ9_Questionnaire"]
+   }
+}
