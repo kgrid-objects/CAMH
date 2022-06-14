@@ -1,0 +1,30 @@
+{
+    "@context": {
+      "dcterms": "http://purl.org/dc/terms/",
+      "koio": "http://kgrid.org/koio/",
+      "fno" : "https://w3id.org/function/ontology/"
+    },
+    "@id": "https://github.com/kgrid-objects/CAMH/tree/CAMH.PHQ9ALGORITHMSTAGES.V1.0",
+    "@type": "koio:KnowledgeObject",
+    "dcterms:title" : "PHQ9 Algorithm Stages",
+    "dcterms:hasVersion" :"1.0",
+    "dcterms:created":"2022-06-13",
+    "dcterms:description" : "PHQ9 Score Algorithm Stages Knowledge Object for computing interpretations and corresponding algorithmic stages as a recommendations for the full range of PHQ9 scores",
+    "dcterms:creator" : ["https://www.camh.ca/","https://medicine.umich.edu/dept/learning-health-sciences"],
+    "dcterms:source" : ["https://github.com/kgrid-objects/CAMH/blob/main/collection/99999-CAMH2-v1.0/MDD%20ICP%20Decision%20Table_15%20Oct%202018_V2.pdf", "https://github.com/kgrid-objects/CAMH/blob/main/collection/99999-CAMH2-v1.0/MDD%20ICP%20Medication%20Algorithm%20Stages.pdf"],
+    "dcterms:publisher" : "https://www.camh.ca/",
+    "dcterms:rights" : "All rights reserved.",
+    "dcterms:rightsHolder" : "Centre for Addiction and Mental Health. 1451 Queen Street West Toronto ON Canada - M6R 1A1",
+    "dcterms:license":"NOT licensed for use outside the Centre for Addiction and Mental Health",
+    "dcterms:valid" : "2022-06-13/",
+    "dcterms:hasPart":["PHQ9_algorithm.js","test.js","README.md","deployment.yaml","service.yaml","metadata.jsonld"],
+    "koio:hasPayload" : {
+    "@id":"https://github.com/kgrid-objects/CAMH/blob/CAMH.PHQ9ALGORITHMSTAGES.V1.0/99999-CAMH2-v1.0/PHQ9_algorithm.js",
+    "@type" : "fno:Function",
+    "dcterms:title" : "process_request",
+    "dcterms:language" : "Javascript",
+    "fno:solves" : "Computes interpretations and corresponding algorithmic stage as a recommendation for a full range of PHQ9 scores",
+    "fno:expects" : ["Patient_Current_Medication_Stage_Number", "Patient_Current_PHQScore", "Patient_Adverse_Events"],
+    "fno:returns" :["Interpretation_and_Recommendation"]
+     }
+  }
