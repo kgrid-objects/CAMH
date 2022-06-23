@@ -21,12 +21,19 @@ function error_handling(response) {
 
 // TEST 0 - Sending a correct request
 console.log("\nTEST 0 - Sending a correct request");
-var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 0, 3, 2, 1, 1, 2, 3], Send_Questionnaire: "YES"};
+var request = {Total_PHQ9_Score: 23, Answers_Array: [1, 0, 0, 3, 2, 1, 1, 2, 3], Send_Questionnaire: "YES"};
 var response = api.process_request(request);
 error_handling(response);
 
-console.log("\nTEST 0 - Sending a correct request #2");
-var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 1, 1], Send_Questionnaire: "YES"};
+// TEST 0.1 Sending a null total score
+console.log("\nTEST 0.1: Sending a null total score");
+var request = {Total_PHQ9_Score: null, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 3], Send_Questionnaire: "no"};
+var response = api.process_request(request);
+error_handling(response);
+
+// TEST 0.2 Sending a null array
+console.log("\nTEST 0.2: Sending a null array");
+var request = {Total_PHQ9_Score: 20, Answers_Array: null, Send_Questionnaire: "no"};
 var response = api.process_request(request);
 error_handling(response);
 
@@ -99,9 +106,10 @@ error_handling(response);
 /* -------------------------- */
 
 // TEST 5 - testing for value(s) in send questionnaire is/are yes or no
+
 // TEST 5.1 - If value(s) is/are other than yes/no
 console.log("\nTEST 5.1 - If value(s) in Send_Questionnaire is/are other than yes/no");
-var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 2], Send_Questionnaire: ""};
+var request = {Total_PHQ9_Score: 27, Answers_Array: [1, 0, 2, 3, 2, 1, 1, 2, 2], Send_Questionnaire: "maybe"};
 var response = api.process_request(request);
 error_handling(response);
 
