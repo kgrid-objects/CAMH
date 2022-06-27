@@ -225,7 +225,7 @@ function Process_both_Array_n_PHQ9(Process_request) {
         Sanitized_Total_PHQ9_Score.null_code == IS_NOT_NULL &&
         Sanitized_Answers_Array.null_code == IS_NOT_NULL 
         ) {
-        if(Process_request.Total_PHQ9_Score > sumarray(Process_request.Answers_Array)){
+        if(Process_request.Total_PHQ9_Score > sumarray(Process_request.Answers_Array)){            
             main_output.Score = {Score_used_for_Interpretation: Process_request.Total_PHQ9_Score, Score_used_from: "Total_PHQ9_Score", Array_Length: "Not Applicable", Sum_of_Array: "Not Applicable"};
             main_output.Interpretation_And_Recommendations = PHQ9_Score_Advice(Process_request.Total_PHQ9_Score);
             main_output.PHQ9_Questionnaire = Attach_PHQ9(Process_request.Send_Questionnaire);
@@ -270,6 +270,7 @@ function process_request(request) {
     Sanitized_Total_PHQ9_Score = sanitize_input_Total_PHQ9_Score(request);
     Sanitized_Answers_Array = sanitize_Answers_Array(request);
     Sanitized_Send_Questionnaire = sanitize_Send_Questionnaire(request);
+    main_output.KnowledgeObject = {identifier : "99999-PHQ9ScoreInterpreter", hasVersion : "1.0"};
     Process_both_Array_n_PHQ9(request);
     Process_Array(request);
     Process_PHQ9Total(request);
