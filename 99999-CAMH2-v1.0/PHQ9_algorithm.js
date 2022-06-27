@@ -156,6 +156,7 @@ function process_request(request) {
     else if (Sanitized_Adverse_Event_Request.error_code == EXIT_FAILURE) return Sanitized_Adverse_Event_Request;
     else {
         Response = Interpretation_And_Recommendations(request)
+        Response.KnowledgeObject = {identifier : "99999-PHQ9Algorithm", hasVersion : "1.0"};
         return Response
     }
 }
