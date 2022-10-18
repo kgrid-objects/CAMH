@@ -16,19 +16,19 @@ def sanitize_input_Total_PHQ9_Score(raw_request):
         if (v is None):
             output = {"null_code": IS_NULL, "error_code": EXIT_SUCCESS, "error_msg": "Provided value is null"}
             return sanitize_output.update(output)
-        
+
         elif (v is not None):
         #Confirming the datatype of request fields are correct.
             if not isinstance(v, int):
                 print(v)
-                output =  {"null_code": IS_NOT_NULL, "error_code": EXIT_FAILURE, "error_msg": "Number expected. Wrong datatype provided! Please check again"}     
-                sanitize_output.update(output)     
-                return sanitize_output   
+                output =  {"null_code": IS_NOT_NULL, "error_code": EXIT_FAILURE, "error_msg": "Number expected. Wrong datatype provided! Please check again"}
+                sanitize_output.update(output)
+                return sanitize_output
 
         #Confirming the bounds of total output.Total_PHQ9_Score input
             if (v < MIN_PHQ9_SCORE) or (v > MAX_PHQ9_SCORE):
-                output =  {"null_code": IS_NOT_NULL, "error_code": EXIT_FAILURE, "error_msg": "PHQ9 Total_PHQ9_Score not in accepted range! Please check again"}        
-                sanitize_output.update(output)  
+                output =  {"null_code": IS_NOT_NULL, "error_code": EXIT_FAILURE, "error_msg": "PHQ9 Total_PHQ9_Score not in accepted range! Please check again"}
+                sanitize_output.update(output)
                 return sanitize_output
     return raw_request
 
@@ -66,12 +66,25 @@ def PHQ9_Score_Interpretation(score):
 
 def process_request(request):
     main_output = {}
+    input_error_output = {}
     request_sanitize = sanitize_input_Total_PHQ9_Score(request)
     if request_sanitize.get("error_code") == EXIT_FAILURE:
-      return request_sanitize
+        input_error_output = {
+              "Input Problem" : request_sanitize}
+        return input_error_output
     else:
         for k, v in request_sanitize.items():
+            score_interp = PHQ9_Score_Interpretation(v)
+            severity = score_interp.get("Depression_Severity")
+            actions = score_interp.get("Proposed_Treatment_Actions")
             main_output = {
-                "PHQ_9_Total_Score": v,
-                "Score_Interpretation" : PHQ9_Score_Interpretation(v)}
+                "@context" : [
+                 "https://fhircat.org/fhir-r4/original/contexts/observation.context.jsonld"
+                ],
+                "resourceType" : "fhir:Observation",
+                 "status": {
+                    "value": "final"
+                },
+                "component" : [{"valueInteger": v,"code":{"coding":[{"display":"Total PHQ9 Score"}]}},{"valueString":severity,"code":{"coding":[{"display":"Depression_Severity"}]}},{"valueString":actions,"code":{"coding":[{"display":"Proposed_Treatment_Actions"}]}}],
+                }
         return main_output
