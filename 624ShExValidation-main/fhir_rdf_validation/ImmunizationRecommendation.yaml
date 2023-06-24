@@ -1,0 +1,15 @@
+
+- schemaLabel: ImmunizationRecommendation
+  schemaURL: ShExSchemas/R5Plus/ImmunizationRecommendation.shex
+  dataLabel: immunizationrecommendation-example
+  dataURL: FHIR_RDF_Examples/R5/immunizationrecommendation-example.ttl
+  queryMap: "{FOCUS a fhir:ImmunizationRecommendation}@<ImmunizationRecommendation>"
+  status: conformant
+  
+- schemaLabel: ImmunizationRecommendation
+  schemaURL: ShExSchemas/R5Plus/ImmunizationRecommendation.shex
+  dataLabel: immunizationrecommendation-example-target-disease
+  dataURL: FHIR_RDF_Examples/R5/immunizationrecommendation-example-target-disease.ttl
+  queryMap: "{FOCUS a fhir:ImmunizationRecommendation}@<ImmunizationRecommendation>"
+  status: conformant
+  

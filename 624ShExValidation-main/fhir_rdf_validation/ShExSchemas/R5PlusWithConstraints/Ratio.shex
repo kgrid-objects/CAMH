@@ -1,0 +1,32 @@
+﻿PREFIX fhir: <http://hl7.org/fhir/> 
+PREFIX fhirvs: <http://hl7.org/fhir/ValueSet/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+#imported_begin 
+IMPORT <DataType.shex>
+#imported_end
+#imported_begin 
+IMPORT <Quantity.shex>
+#imported_end
+# A ratio of two Quantity values - a numerator and a denominator
+<Ratio> EXTENDS @<DataType> CLOSED {   
+
+    a [fhir:Ratio]?;
+
+    fhir:numerator @<Quantity>?;            # Numerator value
+    fhir:denominator @<Quantity>?;          # Denominator value
+} AND (
+
+# Constraint UniqueKey:rat-1
+# Human readable:Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present
+
+# Constraint: (numerator.exists() and denominator.exists()) or (numerator.empty() and denominator.empty() and extension.exists())
+# ShEx:
+
+({fhir:numerator . AND {fhir:denominator .}}) OR ( NOT { fhir:numerator {fhir:v .} }  AND  NOT { fhir:denominator {fhir:v .} }  AND {fhir:extension .})
+
+)
+ 
+

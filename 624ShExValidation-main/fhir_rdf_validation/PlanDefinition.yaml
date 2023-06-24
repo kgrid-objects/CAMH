@@ -1,0 +1,127 @@
+
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-chlamydia-screening-intervention
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-chlamydia-screening-intervention.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-example-cardiology-os
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-example-cardiology-os.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-zika-virus-intervention
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-zika-virus-intervention.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-opioidcds-07
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-opioidcds-07.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-opioidcds-11
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-opioidcds-11.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-opioidcds-05
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-opioidcds-05.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-opioidcds-04
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-opioidcds-04.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-opioidcds-10
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-opioidcds-10.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-example
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-example.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-predecessor-example
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-predecessor-example.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-example-kdn5-simplified
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-example-kdn5-simplified.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-opioidcds-08
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-opioidcds-08.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-exclusive-breastfeeding-intervention-04
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-exclusive-breastfeeding-intervention-04.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-protocol-example
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-protocol-example.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-options-example
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-options-example.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-exclusive-breastfeeding-intervention-03
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-exclusive-breastfeeding-intervention-03.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-exclusive-breastfeeding-intervention-02
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-exclusive-breastfeeding-intervention-02.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
+- schemaLabel: PlanDefinition
+  schemaURL: ShExSchemas/R5Plus/PlanDefinition.shex
+  dataLabel: plandefinition-exclusive-breastfeeding-intervention-01
+  dataURL: FHIR_RDF_Examples/R5/plandefinition-exclusive-breastfeeding-intervention-01.ttl
+  queryMap: "{FOCUS a fhir:PlanDefinition}@<PlanDefinition>"
+  status: conformant
+  
