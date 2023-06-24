@@ -1,8 +1,0 @@
-
-- schemaLabel: Transport
-  schemaURL: ShExSchemas/R5Plus/Transport.shex
-  dataLabel: transport-example
-  dataURL: FHIR_RDF_Examples/R5/transport-example.ttl
-  queryMap: "{FOCUS a fhir:Transport}@<Transport>"
-  status: conformant
-  

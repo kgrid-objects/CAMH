@@ -1,8 +1,0 @@
-
-- schemaLabel: EnrollmentRequest
-  schemaURL: ShExSchemas/R5Plus/EnrollmentRequest.shex
-  dataLabel: enrollmentrequest-example
-  dataURL: FHIR_RDF_Examples/R5/enrollmentrequest-example.ttl
-  queryMap: "{FOCUS a fhir:EnrollmentRequest}@<EnrollmentRequest>"
-  status: conformant
-  

@@ -1,8 +1,0 @@
-
-- schemaLabel: ManufacturedItemDefinition
-  schemaURL: ShExSchemas/R5Plus/ManufacturedItemDefinition.shex
-  dataLabel: manufactureditemdefinition-example
-  dataURL: FHIR_RDF_Examples/R5/manufactureditemdefinition-example.ttl
-  queryMap: "{FOCUS a fhir:ManufacturedItemDefinition}@<ManufacturedItemDefinition>"
-  status: conformant
-  

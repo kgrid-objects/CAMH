@@ -1,8 +1,0 @@
-
-- schemaLabel: SubstanceReferenceInformation
-  schemaURL: ShExSchemas/R5Plus/SubstanceReferenceInformation.shex
-  dataLabel: substancereferenceinformation-example
-  dataURL: FHIR_RDF_Examples/R5/substancereferenceinformation-example.ttl
-  queryMap: "{FOCUS a fhir:SubstanceReferenceInformation}@<SubstanceReferenceInformation>"
-  status: conformant
-  

@@ -1,8 +1,0 @@
-
-- schemaLabel: AdministrableProductDefinition
-  schemaURL: ShExSchemas/R5Plus/AdministrableProductDefinition.shex
-  dataLabel: administrableproductdefinition-example
-  dataURL: FHIR_RDF_Examples/R5/administrableproductdefinition-example.ttl
-  queryMap: "{FOCUS a fhir:AdministrableProductDefinition}@<AdministrableProductDefinition>"
-  status: conformant
-  

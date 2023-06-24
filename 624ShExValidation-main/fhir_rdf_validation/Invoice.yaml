@@ -1,8 +1,0 @@
-
-- schemaLabel: Invoice
-  schemaURL: ShExSchemas/R5Plus/Invoice.shex
-  dataLabel: invoice-example
-  dataURL: FHIR_RDF_Examples/R5/invoice-example.ttl
-  queryMap: "{FOCUS a fhir:Invoice}@<Invoice>"
-  status: conformant
-  

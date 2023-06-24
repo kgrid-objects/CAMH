@@ -1,8 +1,0 @@
-
-- schemaLabel: ResearchSubject
-  schemaURL: ShExSchemas/R5Plus/ResearchSubject.shex
-  dataLabel: researchsubject-example-crossover-placebo-to-drug
-  dataURL: FHIR_RDF_Examples/R5/researchsubject-example-crossover-placebo-to-drug.ttl
-  queryMap: "{FOCUS a fhir:ResearchSubject}@<ResearchSubject>"
-  status: conformant
-  

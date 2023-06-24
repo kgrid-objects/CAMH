@@ -1,8 +1,0 @@
-
-- schemaLabel: NutritionProduct
-  schemaURL: ShExSchemas/R5Plus/NutritionProduct.shex
-  dataLabel: nutritionproduct-example
-  dataURL: FHIR_RDF_Examples/R5/nutritionproduct-example.ttl
-  queryMap: "{FOCUS a fhir:NutritionProduct}@<NutritionProduct>"
-  status: conformant
-  

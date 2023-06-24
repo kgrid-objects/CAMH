@@ -1,8 +1,0 @@
-
-- schemaLabel: MedicationKnowledge
-  schemaURL: ShExSchemas/R5Plus/MedicationKnowledge.shex
-  dataLabel: medicationknowledge-example
-  dataURL: FHIR_RDF_Examples/R5/medicationknowledge-example.ttl
-  queryMap: "{FOCUS a fhir:MedicationKnowledge}@<MedicationKnowledge>"
-  status: conformant
-  

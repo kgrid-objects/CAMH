@@ -1,8 +1,0 @@
-
-- schemaLabel: PractitionerRole
-  schemaURL: ShExSchemas/R5Plus/PractitionerRole.shex
-  dataLabel: practitionerrole-example
-  dataURL: FHIR_RDF_Examples/R5/practitionerrole-example.ttl
-  queryMap: "{FOCUS a fhir:PractitionerRole}@<PractitionerRole>"
-  status: conformant
-  

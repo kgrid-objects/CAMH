@@ -1,8 +1,0 @@
-
-- schemaLabel: InsurancePlan
-  schemaURL: ShExSchemas/R5Plus/InsurancePlan.shex
-  dataLabel: insuranceplan-example
-  dataURL: FHIR_RDF_Examples/R5/insuranceplan-example.ttl
-  queryMap: "{FOCUS a fhir:InsurancePlan}@<InsurancePlan>"
-  status: conformant
-  

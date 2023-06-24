@@ -1,8 +1,0 @@
-
-- schemaLabel: EvidenceReport
-  schemaURL: ShExSchemas/R5Plus/EvidenceReport.shex
-  dataLabel: evidencereport-example
-  dataURL: FHIR_RDF_Examples/R5/evidencereport-example.ttl
-  queryMap: "{FOCUS a fhir:EvidenceReport}@<EvidenceReport>"
-  status: conformant
-  

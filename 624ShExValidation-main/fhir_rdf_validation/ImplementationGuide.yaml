@@ -1,8 +1,0 @@
-
-- schemaLabel: ImplementationGuide
-  schemaURL: ShExSchemas/R5Plus/ImplementationGuide.shex
-  dataLabel: implementationguide-example
-  dataURL: FHIR_RDF_Examples/R5/implementationguide-example.ttl
-  queryMap: "{FOCUS a fhir:ImplementationGuide}@<ImplementationGuide>"
-  status: conformant
-  
